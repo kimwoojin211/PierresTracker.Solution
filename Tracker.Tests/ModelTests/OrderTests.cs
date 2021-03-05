@@ -90,7 +90,7 @@ namespace Tracker.Tests
       string price = "Test price";
       string date = "Test date";
       Order newOrder = new Order(title,description,price,date);
-      string newDescription = "Sike. New title.";
+      string newDescription = "Sike. New description.";
       newOrder.Description = newDescription;
       string result = newOrder.Description;
       Assert.AreEqual(newDescription, result);
@@ -104,10 +104,24 @@ namespace Tracker.Tests
       string price = "Test price";
       string date = "Test date";
       Order newOrder = new Order(title,description,price,date);
-      string newPrice = "Sike. New title.";
+      string newPrice = "Sike. New price.";
       newOrder.Price = newPrice;
       string result = newOrder.Price;
       Assert.AreEqual(newPrice, result);
+    }
+            
+    [TestMethod]
+    public void SetDate_SetDate_String()
+    {
+      string title = "Test title";
+      string description = "Test description";
+      string price = "Test price";
+      string date = "Test date";
+      Order newOrder = new Order(title,description,price,date);
+      string newDate = "Sike. New date.";
+      newOrder.Date = newDate;
+      string result = newOrder.Date;
+      Assert.AreEqual(newDate, result);
     }
   }
 }
