@@ -28,7 +28,7 @@ namespace Tracker.Models
     }
     public static Order Find(int searchId)
     {
-      return new Order("t","d","p","d");
+      return _instances[searchId-1];
     }
   }
 }
