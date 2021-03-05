@@ -1,0 +1,11 @@
+@using Tracker.Models
+
+<h2>@Model["order"].Title</h2>
+<h3>Vendor: @Model["vendor"].Name</h3>
+<h3>Price: $@Model["order"].Price</h3>
+<h3>Date: @Model["order"].Date</h3>
+<h3>Description: @Model["order"].Description</h3>
+
+<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
+<p><a href='/vendors'>Return to vendor list</a></p>
+<p><a href='/'>Return to Main Page</a></p>

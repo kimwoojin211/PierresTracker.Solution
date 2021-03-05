@@ -2,7 +2,10 @@
 @{
   Layout = "_Layout";
 }
-<h1>Vendors:Show</h1>
+<h1>@Model["vendor"].Name</h1>
+<h3>@Model["vendor"].Description</h3>
+<br>
+<h4>All orders with @Model["vendor"].Name:</h4>
 
 <ol>
   @foreach (Order order in @Model["orders"])
