@@ -149,5 +149,22 @@ namespace Tracker.Tests
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList,result);
     }
+
+    [TestMethod]
+    public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      //Arrange
+      string title = "Test title";
+      string description = "Test description";
+      string price = "Test price";
+      string date = "Test date";
+      Order newOrder = new Order(title,description,price,date);
+
+      //Act
+      int result = newOrder.Id;
+
+      //Assert
+      Assert.AreEqual(1,result);
+    }
   }
 }
