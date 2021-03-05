@@ -132,5 +132,22 @@ namespace Tracker.Tests
       CollectionAssert.AreEqual(newList,result);
     }
 
+    [TestMethod]
+    public void GetAll_ReturnsOrderList_OrderList()
+    {
+      string title1 = "Test title1";
+      string description1 = "Test description1";
+      string price1 = "Test price1";
+      string date1 = "Test date1";
+      string title2 = "Test title2";
+      string description2 = "Test description2";
+      string price2 = "Test price2";
+      string date2 = "Test date2";
+      Order newOrder1 = new Order(title1,description1,price1,date1);
+      Order newOrder2 = new Order(title2,description2,price2,date2);
+      List<Order> newList = new List<Order>{newOrder1,newOrder2};
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList,result);
+    }
   }
 }
