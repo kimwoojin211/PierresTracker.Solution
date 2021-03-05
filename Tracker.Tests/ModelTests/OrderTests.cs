@@ -31,5 +31,18 @@ namespace Tracker.Tests
       string result = newOrder.Title;
       Assert.AreEqual(title, result);
     }
+
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string title = "Test title";
+      string description = "Test description";
+      string price = "Test price";
+      string date = "Test date";
+      Order newOrder = new Order(title,description,price,date);
+      string result = newOrder.Description;
+      Assert.AreEqual(description, result);
+    }
+    
   }
 }
