@@ -24,7 +24,7 @@ namespace Tracker.Models
     }
     public static List<Order> GetAll()
     {
-      return new List<Order>{};
+      return _instances;
     }
   }
 }
