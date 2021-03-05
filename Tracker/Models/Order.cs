@@ -22,5 +22,9 @@ namespace Tracker.Models
     {
       _instances.Clear();
     }
+    public static List<Order> GetAll()
+    {
+      return new List<Order>{};
+    }
   }
 }
