@@ -81,5 +81,19 @@ namespace Tracker.Tests
       string result = newOrder.Title;
       Assert.AreEqual(newTitle, result);
     }
+    
+    [TestMethod]
+    public void SetDescription_SetDescription_String()
+    {
+      string title = "Test title";
+      string description = "Test description";
+      string price = "Test price";
+      string date = "Test date";
+      Order newOrder = new Order(title,description,price,date);
+      string newDescription = "Sike. New title.";
+      newOrder.Description = newDescription;
+      string result = newOrder.Description;
+      Assert.AreEqual(newDescription, result);
+    }
   }
 }
