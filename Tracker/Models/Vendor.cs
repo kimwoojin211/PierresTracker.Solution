@@ -10,7 +10,15 @@ namespace Tracker.Models
     private static List<Vendor> _instances = new List<Vendor>{};
     public Vendor(string name, string description)
     {
-
+      Name = name;
+      Description = description;
+      Id = _instances.Count;
+      _instances.Add(this);
+      Orders = new List<Order>{};
+    }
+    public static List<Vendor> GetAll()
+    {
+      return _instances;
     }
   }
 }
