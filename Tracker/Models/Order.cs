@@ -11,7 +11,12 @@ namespace Tracker.Models
     private static List<Order> _instances = new List<Order>{};
     public Order(string title, string description, string price, string date)
     {
-
+      Title = title;
+      Description = description;
+      Price = price;
+      Date = date;
+      Id = _instances.Count;
+      _instances.Add(this);
     }
   }
 }
