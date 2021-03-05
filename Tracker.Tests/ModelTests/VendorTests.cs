@@ -23,5 +23,14 @@ namespace Tracker.Tests
       string result = newVendor.Name;
       Assert.AreEqual(name,result);
     }
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string name = "Vendor 1";
+      string description = "Vendor 1 Description";
+      Vendor newVendor = new Vendor(name,description);
+      string result = newVendor.Description;
+      Assert.AreEqual(description,result);
+    }
   }
 }
