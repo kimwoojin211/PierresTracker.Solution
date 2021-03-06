@@ -1,17 +1,17 @@
 @{
   Layout = "_Layout";
 }
-<h1>Enter the new order for @Model.Name, Pierre.:</h1>
+<h2>Enter the new order for @Model.Name, Pierre:</h2>
 
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
   <label for="orderTitle">Order title</label>
-  <input id="orderTitle" name="orderTitle" type="text"> <br>
+  <input id="orderTitle" name="orderTitle" type="text">
   <label for="orderDescription">Order description</label>
-  <input id="orderDescription" name="orderDescription" type="text"> <br>
+  <input id="orderDescription" name="orderDescription" type="text">
   <label for="orderPrice">Order price</label>
-  <input id="orderPrice" name="orderPrice" type="text"> <br>
+  <input id="orderPrice" name="orderPrice" type="text">
   <label for="orderDate">Order date</label>
-  <input id="orderDate" name="orderDate" type="text"> <br>
+  <input id="orderDate" name="orderDate" type="text">
   <button type="submit">Submit</button>
 </form>

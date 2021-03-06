@@ -5,14 +5,18 @@
 <h1>@Model["vendor"].Name</h1>
 <h3>@Model["vendor"].Description</h3>
 <br>
-<h4>All orders with @Model["vendor"].Name:</h4>
+<p>All orders with @Model["vendor"].Name:</p>
 
-<ol>
-  @foreach (Order order in @Model["orders"])
-  {
-    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
-  }
-</ol>
+<div class="content">
+  <div class="list">
+    <ol>
+      @foreach (Order order in @Model["orders"])
+      {
+        <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'> @order.Title </a></li>
+      }
+    </ol> 
+  </div>
+</div>
 
 <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
 <p><a href='/vendors'>Return to vendor list</a></p>

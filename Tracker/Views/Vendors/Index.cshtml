@@ -9,11 +9,14 @@
 {
   <h3>You don't have any vendors, Pierre!</h3>
 }
-
-@foreach (Vendor vendor in Model)
-{
-    <h4><a href='/vendors/@vendor.Id'>@vendor.Name</a></h4>
-}
+<div class="content">
+  <div class="list">
+    @foreach (Vendor vendor in Model)
+    {
+      <h3><a href='/vendors/@vendor.Id'>@vendor.Name</a></h3>
+    }
+  </div>
+</div>
 
 <a href="/vendors/new">Register a new vendor</a>
 <p><a href='/'>Back home</a></p>
