@@ -3,10 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace Tracker
 {
-  
   public class Program
   {
-
     public static void Main(string[] args)
     {
       var host = new WebHostBuilder()

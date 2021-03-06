@@ -13,6 +13,7 @@
 
 ## Description
 
+An MVC application to help Pierre the Baker track vendors that purchased goods from him. Pierre (or another user) can enter his vendors one by one via form. These vendor entries will then provide another page where Pierre is able to see all of the orders made by the selected vendor. Pierre can also access another form to add orders and their details to each vendor page. 
 
 ## Setup/Installation Requirements
 
@@ -23,7 +24,7 @@
 
 ## Known Bugs
 
-* _None_
+* Bullet points and numbered lists in the vendor and order lists aren't displaying properly
 
 ## License
 
