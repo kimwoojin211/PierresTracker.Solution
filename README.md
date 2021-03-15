@@ -1,5 +1,5 @@
 # Pierre's Tracker
-### A project for Epicodus
+### ```A project for Epicodus```
 
 #### A program to help Baker Pierre track his vendors and orders.
 
