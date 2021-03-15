@@ -10,6 +10,7 @@
 * _C#_
 * _.NET 5.0.102_
 * _MS Test_
+* _ASP.NET Core MVC_
 
 ## Description
 
